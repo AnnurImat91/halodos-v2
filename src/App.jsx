@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Sidebar from './components/Sidebar/Sidebar'
 import NavbarWithSearch from './components/Header/Header'
+import CarouselDefault from './components/Carousel/Carousel'
+import CardDefault from './components/Benefit/Benefit'
 
 export default function App() {
   const [count, setCount] = useState(0)
@@ -16,7 +18,12 @@ export default function App() {
       <div className='absolute top-0 right-0'>
         <NavbarWithSearch />
       </div>
-
+      <div className='absolute top-20 left-[300px]'>
+        <CarouselDefault />
+      </div>
+      <div className='relative mt-60'>
+        <CardDefault />
+      </div>
     </>
   )
 }
